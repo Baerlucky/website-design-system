@@ -1,0 +1,375 @@
+/* Universal Styles */
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  background-color: #b9b9b9;
+  line-height: 1.6;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1rem;
+  border: 2px solid #ff00ff;
+  box-sizing: border-box;
+}
+
+.containerInner {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.secTitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Work-Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.patchText {
+  text-align: center;
+  margin: 0rem;
+}
+
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  background-color: #ff00ff;
+  padding: .1rem;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+header h1 {
+  margin-bottom: 0rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+header h2 {
+  margin-top: 0rem;
+  padding-left: 6rem;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+
+.navList {
+  padding-top: 1rem;
+  padding-right: 2rem;
+  list-style-type: none;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: .125rem;
+}
+
+.navList a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navList a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 525px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    background-color: #ff00ff;
+    padding: .1rem;
+    color: #fff;
+    box-sizing: border-box;
+  }
+
+  header h1 {
+    margin-bottom: 0rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  header h2 {
+    margin-top: 0rem;
+    padding-left: 6rem;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 1.375rem;
+    font-weight: 400;
+  }
+
+  .navList {
+    padding-top: 1rem;
+    padding-left: 6rem;
+    list-style-type: none;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+
+/* Landing Page (main section) */
+#font_1.example_1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#font_1.example_2 {
+  font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+#font_1.example_3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#font_2.example_1 {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#font_2.example_2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+#font_2.example_3 {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#font_3.example_1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#font_3.example_2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#font_3.example_3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/* Colors Page (current colors) */
+#currentColors .containerInner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-content: center;
+  row-gap: 20px;
+}
+
+#currentColors #colorPatch {
+  border: 2px solid #ff00ff;
+  border-radius: 50%;
+  width: 75%;
+  height: auto;
+  margin-bottom: .5em;
+}
+
+#currentColors .color_1 {
+  background-color: #b9b9b9;
+}
+
+#currentColors .color_2 {
+  background-color: #000;
+}
+
+#currentColors .color_2 .patchText {
+  color: #fff;
+}
+
+#currentColors .color_3 {
+  background-color: #fff;
+}
+
+#currentColors .color_4 {
+  background-color: #ff00ff;
+}
+
+#currentColors #colorPatch .color_4 {
+  border: 2px solid #000;
+}
+
+
+/* Colors Page (future colors) */
+#futureColors .containerInner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  row-gap: 20px;
+}
+
+#futureColors #colorPatch {
+  border: 2px solid #ff00ff;
+  border-radius: 50%;
+  width: 75%;
+  height: auto;
+  margin-bottom: .5em;
+}
+
+#futureColors .color_1 {
+  background-color: #ff0000;
+}
+
+#futureColors .color_1 .patchText {
+  color: #fff;
+}
+
+#futureColors .color_2 {
+  background-color: #800000;
+}
+
+#futureColors .color_2 .patchText {
+  color: #fff;
+}
+
+#futureColors .color_3 {
+  background-color: #8080ff;
+}
+
+#futureColors .color_4 {
+  background-color: #3333ff;
+}
+
+#futureColors .color_4 .patchText {
+  color: #fff;
+}
+
+#futureColors .color_5 {
+  background-color: #0000ff;
+}
+
+#futureColors .color_5 .patchText {
+  color: #fff;
+}
+
+#futureColors .color_6 {
+  background-color: #80ff80;
+}
+
+#futureColors .color_7 {
+  background-color: #00ff00;
+}
+
+#futureColors .color_8 {
+  background-color: #ff66ff;
+}
+
+#futureColors .color_9 {
+  background-color: #800080;
+}
+
+#futureColors .color_9 .patchText {
+  color: #fff;
+}
+
+@media only screen and (max-width: 525px) {
+  .patchText {
+    text-align: center;
+    margin: 0rem;
+    font-size: .5rem;
+  }
+}
+
+/* Navigation Page (links) */
+.exLink a:link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.exLink a:visited {
+  color: purple;
+  text-decoration: none;
+}
+
+.exLink a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.exLink a:active {
+  color: red;
+  text-decoration: none;
+}
+
+.note {
+  color: #ff00ff;
+}
+
+/* Navigation Page (buttons) */
+.button {
+  border: 2px #b9b9b9 outset;
+  border-radius: 5px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #0000ff;
+  padding: .25rem;
+  
+}
+
+.button:hover {
+  color: #ff00ff;
+  background-color: #000;
+}
+
+.button:active {
+  border: 3px #b9b9b9 inset;
+}
+
+/* Footer Section */
+footer {
+  padding: 1rem;
+  text-align: center;
+}
